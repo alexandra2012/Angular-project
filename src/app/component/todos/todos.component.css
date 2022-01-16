@@ -1,0 +1,82 @@
+.todo {
+	display: flex;
+	padding: 10px 15px;
+	background-color: #FFF;
+	border-bottom: 1px solid #DDD;
+}
+
+.todo:nth-child(even) {
+	background-color: #EEE;
+}
+
+.todo:last-of-type {
+	border-bottom: 0;
+}
+
+.todo .id {
+	flex: 1 1 50px;
+}
+
+.todo .content {
+	flex: 1 1 100%;
+}
+
+.todo.done .content {
+	text-decoration: line-through;
+
+}
+
+.todo-input {
+	display: block;
+	width: 100%;
+	padding: 10px 15px;
+	appearance: none;
+	border: none;
+	background-color: #F3F3F3;
+	margin-top: 15px;
+	font-size: 20px;
+	outline: none;
+    border-radius: 5px;
+}
+
+.todo-submit {
+	display: block;
+	width: 100%;
+	max-width: 200px;
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+    border-radius: 10px;
+	background-color: #5443f1;
+	color: #FFF;
+	margin: 15px auto;
+	padding: 10px 15px;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.todo-submit:hover {
+    background-color: #8970f5;
+}
+
+.todo-submit:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.delete {
+    background-color: #e968be;
+    border-radius: 5px;
+    color: white;
+}
+
+.delete:hover {
+    background-color: #e9b6d8;
+    color: black;
+}
+
+.delete:active {
+  box-shadow: 0 5px rgb(192, 191, 191);
+  transform: translateY(4px);
+}
